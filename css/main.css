@@ -1,6 +1,65 @@
+:root {
+  --color-white: #fff;
+  --color-dark-white: #cecece;
+  --color-light-black: #3a3a3a;
+  --color-black: #333;
+}
+/* ---------- COMMON ---------- */
 body {
   font-size: 16px;
   line-height: 1;
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   word-break: keep-all;
+  height: 3000px;
+}
+
+/* ---------- Header ---------- */
+.header {
+  height: 2.75rem;
+  background-color: var(--color-light-black);
+  color: var(--color-dark-white);
+}
+.header .inner {
+  height: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.header .inner .menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .inner .menu .item {
+  padding: 0.6rem;
+  cursor: pointer;
+}
+.header .inner .menu .item span,
+.header .inner .menu .item div {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+.header .inner .menu .item.apple-logo div,
+.header .inner .menu .item.search-starter div,
+.header .inner .menu .item.basket-starter div {
+  font-size: 1.2rem;
+  width: 0.875rem;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .inner .menu .item.apple-logo div {
+  background-image: url('../images/header_apple.svg');
+}
+.header .inner .menu .item.search-starter div {
+  background-image: url('../images/header_search.svg');
+}
+.header .inner .menu .item.basket-starter div {
+  background-image: url('../images/header_bag.svg');
+}
+.header .inner .menu .item:hover span,
+.header .inner .menu .item:hover div {
+  opacity: 1;
 }
