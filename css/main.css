@@ -27,6 +27,22 @@ a {
   color: var(--color-dark-black);
   text-decoration: none;
 }
+
+.btn {
+  height: 1.5rem;
+  padding: 0 0.625rem;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 0.6875rem;
+  line-height: 1;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(1.1);
+}
 /* ---------- Header ---------- */
 .header {
   height: 2.75rem;
@@ -259,4 +275,47 @@ a {
 }
 .header .basket .button-group li a:hover {
   text-decoration: underline;
+}
+
+/* ---------- Navigation ---------- */
+.nav {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--color-light-gray);
+  position: sticky;
+  top: 0;
+  z-index: 8;
+}
+.nav > .inner {
+  height: 3.25rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.nav .inner .title {
+  flex-grow: 1;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+.nav .inner .menu {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-right: 1.125rem;
+}
+.nav .inner .menu li a {
+  display: block;
+  padding: 0.375rem;
+  font-size: 0.6875rem;
+}
+.nav .inner .menu li a:hover {
+  color: var(--color-blue);
+}
+.nav .inner .menu li.active a {
+  color: var(--color-dark-gray);
+}
+.nav .inner .menu li.active:hover a {
+  cursor: default;
+  color: var(--color-dark-gray);
 }
