@@ -104,6 +104,7 @@ a {
   visibility: hidden;
   opacity: 0;
   transition: 0.4s;
+  z-index: 9;
 }
 .header .search-wrap .search {
   max-width: 680px;
@@ -227,6 +228,7 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: 0.4s;
+  z-index: 9;
 }
 .header .basket.show {
   opacity: 1;
