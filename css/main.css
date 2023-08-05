@@ -125,6 +125,13 @@ a.link:hover {
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
+  transition: 1s;
+  opacity: 0;
+  transform: translate(0, 100px);
+  }
+.info.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 .info .icon {
   width: 100px;

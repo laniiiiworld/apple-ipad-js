@@ -68,3 +68,15 @@ $basketStarter.addEventListener('click', (event) => {
 });
 $basket.addEventListener('click', (event) => event.stopPropagation());
 window.addEventListener('click', hideBasket);
+
+//요소의 가성 관찰
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add('show');
+  });
+});
+const $infos = document.querySelectorAll('.info');
+$infos.forEach(($info) => io.observe($info));
