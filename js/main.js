@@ -80,3 +80,19 @@ const io = new IntersectionObserver((entries) => {
 });
 const $infos = document.querySelectorAll('.info');
 $infos.forEach(($info) => io.observe($info));
+
+//동영상 재생 제어
+const $video = document.querySelector(".camera .stage video");
+const $playBtn = document.querySelector('.camera .stage .controller--play');
+const $pauseBtn = document.querySelector('.camera .stage .controller--pause');
+function togglePlayOrPauseVideo() {
+  $playBtn.classList.toggle('hide');
+  $pauseBtn.classList.toggle('hide');
+  if ($playBtn.classList.contains('hide')) {
+    $video.play();
+  } else {
+    $video.pause();
+  }
+}
+$playBtn.addEventListener('click', togglePlayOrPauseVideo);
+$pauseBtn.addEventListener('click', togglePlayOrPauseVideo);

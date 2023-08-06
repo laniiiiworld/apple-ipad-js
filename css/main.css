@@ -618,6 +618,37 @@ a.link:hover {
 .camera .inner .stage .figures figure {
   transform: translate(90px, 0);
 }
+.camera .inner .stage .figures figure video {
+  position: absolute;
+  top: 36px;
+  left: 76px;
+  -webkit-mask-image: url('../images/camera_video_mask.png');
+  mask-image: url('../images/camera_video_mask.png');
+}
+.camera .inner .stage .figures figure .controller--play,
+.camera .inner .stage .figures figure .controller--pause {
+  color: var(--color-link);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transform: translate(428px, -114px) rotate(-3deg);
+  width: 5.4rem;
+}
+.camera .inner .stage .figures figure .controller--play:hover,
+.camera .inner .stage .figures figure .controller--pause:hover {
+  text-decoration: underline;
+}
+.camera .inner .stage .figures figure .controller--play.hide,
+.camera .inner .stage .figures figure .controller--pause.hide {
+  display: none;
+}
+.camera .inner .stage .figures figure .controller--play img,
+.camera .inner .stage .figures figure .controller--pause img {
+  width: 1.1rem;
+  height: 1.1rem;
+}
 .camera .inner .stage .figures figure .description {
   background-image: url('../images/camera_hardware_caption.png');
   width: 130px;
