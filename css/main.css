@@ -162,6 +162,11 @@ a.link:hover {
   font-weight: 600;
   line-height: 1.5;
 }
+.info a.link {
+  display: block;
+  margin-top: 2.75rem;
+  font-size: 19.5px;
+}
 
 /* ---------- Header ---------- */
 .header {
@@ -667,6 +672,43 @@ a.link:hover {
   width: 130px;
   height: 47px;
   transform: translate(27px, 905px);
+}
+
+/* ---------- Wireless ---------- */
+.wireless {
+  margin-top: 12.625rem;
+}
+/* Wireless / Facetime */
+.wireless .inner .facetime .headline {
+  background-image: url('../images/wireless_headline.png');
+  width: 730px;
+  height: 330px;
+  transform: translate(104px, 0);
+}
+.wireless .inner .facetime .figures {
+  height: 773px;
+}
+.wireless .inner .facetime .figures figure {
+  transform: translate(-68px, 0);
+}
+.wireless .inner .facetime .figures figure figcaption {
+  background-image: url('../images/wireless_facetime_caption.png');
+  width: 139px;
+  height: 46px;
+  transform: translate(843px, -49px);
+}
+/* Wireless / Files */
+.wireless .inner .files .figures {
+  height: 750px;
+}
+.wireless .inner .files .figures figure {
+  transform: translate(34px, -34px);
+}
+.wireless .inner .files .figures figure .description {
+  background-image: url('../images/wireless_files_caption.png');
+  width: 127px;
+  height: 46px;
+  transform: translate(70px, 650px);
 }
 
 /* ---------- keyframes ---------- */
