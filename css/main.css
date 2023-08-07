@@ -133,6 +133,9 @@ a.link:hover {
   opacity: 1;
   transform: translate(0, 0);
 }
+.infos--large .info {
+  max-width: 410px;
+}
 .info .icon {
   width: 100px;
   height: 100px;
@@ -709,6 +712,40 @@ a.link:hover {
   width: 127px;
   height: 46px;
   transform: translate(70px, 650px);
+}
+/* ---------- Accessories ---------- */
+.accessories {
+  margin-top: 12.1875rem;
+}
+.accessories .inner .headline {
+  background-image: url('../images/accessories_headline.png');
+  width: 550px;
+  height: 343px;
+  margin: 0 auto;
+}
+.accessories .inner .figures {
+  height: 1021px;
+  margin-top: 34px;
+}
+.accessories .inner .figures figure {
+  transform: translate(-24px, 0);
+}
+.accessories .inner .figures figure figcaption .caption-memo {
+  background-image: url('../images/accessories_caption_memo.png');
+  width: 169px;
+  height: 41px;
+  transform: translate(790px, -52px);
+}
+.accessories .inner .figures figure figcaption .caption-supports {
+  background-image: url('../images/accessories_caption_supports.png');
+  width: 200px;
+  height: 70px;
+  transform: translate(163px, 821px);
+}
+.accessories .infos {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* ---------- keyframes ---------- */
