@@ -899,6 +899,22 @@ a.link:hover {
   height: 31px;
   transform: translate(533px, 485px);
 }
+/* ---------- Accessibility ---------- */
+.accessibility {
+  margin-top: 16.625rem;
+  margin-bottom: 10.625rem;
+}
+.accessibility .inner .headline {
+  background-image: url('../images/accessibility_headline.png');
+  width: 384px;
+  height: 270px;
+}
+.accessibility .inner .infos {
+  margin-top: 1.25rem;
+}
+.accessibility .inner .figures figure {
+  transform: translate(470px, -620px);
+}
 
 /* ---------- keyframes ---------- */
 @keyframes sprite-icon {
