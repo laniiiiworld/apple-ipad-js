@@ -799,6 +799,74 @@ a.link:hover {
   transform: translate(511px, 470px);
 }
 
+/* ---------- Apps ---------- */
+.apps {
+  margin-top: 23rem;
+}
+.apps .inner .headline {
+  background-image: url('../images/apps_headline.png');
+  width: 500px;
+  height: 264px;
+  transform: translate(17px, 0);
+}
+.apps .inner .infos {
+  margin-top: 36px;
+  margin-left: 82px;
+}
+.apps .inner .figures {
+  display: flex;
+  height: 788px;
+}
+.apps .inner .figures > div {
+  flex-grow: 1;
+  position: relative;
+}
+.apps .inner .figures .figure-masterclass figure {
+  transform: translate(578px, -431px);
+}
+.apps .inner .figures .figure-masterclass figure .description {
+  background-image: url('../images/apps_masterclass_caption.png');
+  width: 100px;
+  height: 25px;
+  transform: translate(26px, 690px);
+}
+.apps .inner .figures .figure-adobe figure {
+  transform: translate(-515px, 85px);
+}
+.apps .inner .figures .figure-adobe figure .description {
+  background-image: url('../images/apps_adobe_caption.png');
+  width: 105px;
+  height: 24px;
+  transform: translate(544px, 514px);
+}
+.apps .inner .figures .figure-fantasian figure {
+  transform: translate(-103px, 318px);
+}
+.apps .inner .figures .figure-fantasian figure .description {
+  background-image: url('../images/apps_fantasian_caption.png');
+  width: 74px;
+  height: 22px;
+  transform: translate(24px, 483px);
+}
+.apps .inner .figures .figure-books figure {
+  transform: translate(-133px, -150px);
+}
+.apps .inner .figures .figure-books figure .description {
+  background-image: url('../images/apps_books_caption.png');
+  width: 50px;
+  height: 27px;
+  transform: translate(397px, 707px);
+}
+.apps .inner .figures .figure-goodnotes figure {
+  transform: translate(-93px, 68px);
+}
+.apps .inner .figures .figure-goodnotes figure .description {
+  background-image: url('../images/apps_goodnotes_caption.png');
+  width: 99px;
+  height: 25px;
+  transform: translate(24px, 690px);
+}
+
 /* ---------- keyframes ---------- */
 @keyframes sprite-icon {
   /* 1~10 */
