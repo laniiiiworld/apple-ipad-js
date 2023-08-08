@@ -867,6 +867,39 @@ a.link:hover {
   transform: translate(24px, 690px);
 }
 
+/* ---------- Privacy ---------- */
+.privacy {
+  margin-top: 14.875rem;
+}
+.privacy .inner .headline {
+  background-image: url('../images/privacy_headline.png');
+  width: 482px;
+  height: 237px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  transform: translate(57px, 0);
+}
+.privacy .inner .infos {
+  margin-top: 2.375rem;
+  align-items: flex-end;
+}
+.privacy .inner .figures figure {
+  transform: translate(-215px, -500px);
+}
+.privacy .inner .figures figure figcaption .caption-apple-id {
+  background-image: url('../images/privacy_caption_apple_id.png');
+  width: 170px;
+  height: 26px;
+  transform: translate(195px, -13px);
+}
+.privacy .inner .figures figure figcaption .caption-touch-id {
+  background-image: url('../images/privacy_caption_touch_id.png');
+  width: 150px;
+  height: 31px;
+  transform: translate(533px, 485px);
+}
+
 /* ---------- keyframes ---------- */
 @keyframes sprite-icon {
   /* 1~10 */
