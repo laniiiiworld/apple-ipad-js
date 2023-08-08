@@ -976,6 +976,23 @@ a.link:hover {
   color: #03a10e;
 }
 
+/* ---------- Accessory Shop ---------- */
+.accessory-shop {
+  background-color: var(--color-section);
+  text-align: center;
+}
+.accessory-shop .whitebox {
+  padding-bottom: 0;
+}
+.accessory-shop .whitebox .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accessory-shop .whitebox .inner img {
+  margin-top: 3.125rem;
+}
+
 /* ---------- keyframes ---------- */
 @keyframes sprite-icon {
   /* 1~10 */
