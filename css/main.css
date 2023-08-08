@@ -748,6 +748,57 @@ a.link:hover {
   justify-content: space-around;
 }
 
+/* ---------- iPadOS ---------- */
+.ipados {
+  margin-top: 13.25rem;
+}
+.ipados .inner .headline {
+  background-image: url('../images/ipados_headline.png');
+  width: 530px;
+  height: 400px;
+  margin: 0 auto;
+}
+.ipados .inner .infos {
+  margin-top: 44px;
+  align-items: flex-end;
+}
+/* iPadOS / Figures */
+.ipados .inner .figures {
+  height: 782px;
+  display: flex;
+}
+.ipados .inner .figures > div {
+  flex-grow: 1;
+  position: relative;
+}
+.ipados .inner .figures .figure-split-view figure {
+  transform: translate(-205px, -312px);
+}
+.ipados .inner .figures .figure-split-view figure .description {
+  background-image: url('../images/ipados_split_view_caption.png');
+  width: 163px;
+  height: 53px;
+  transform: translate(200px, -38px);
+}
+.ipados .inner .figures .figure-widgets figure {
+  transform: translate(237px, 43px);
+}
+.ipados .inner .figures .figure-widgets figure .description {
+  background-image: url('../images/ipados_widgets_caption.png');
+  width: 161px;
+  height: 46px;
+  transform: translate(257px, 497px);
+}
+.ipados .inner .figures .figure-quick-note figure {
+  transform: translate(-625px, 232px);
+}
+.ipados .inner .figures .figure-quick-note figure .description {
+  background-image: url('../images/ipados_quick_note_caption.png');
+  width: 82px;
+  height: 97px;
+  transform: translate(511px, 470px);
+}
+
 /* ---------- keyframes ---------- */
 @keyframes sprite-icon {
   /* 1~10 */
