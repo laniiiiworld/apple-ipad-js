@@ -1,4 +1,5 @@
 import ipads from '../data/ipads.js';
+import navigations from '../data/navigations.js';
 
 const $header = document.querySelector('.header');
 const $headerMenus = [...$header.querySelectorAll('.menu .item')];
@@ -123,4 +124,24 @@ function getColorList(colors) {
 }
 function getPrice(price) {
   return `₩${price.toLocaleString('en-US')}부터`;
+}
+
+//Footer navigations 랜더링
+const $navigations = document.querySelector('footer .navigations');
+navigations.forEach((nav) => {
+  const { title, maps } = nav;
+  const $map = document.createElement('div');
+  $map.className = 'map';
+  $map.innerHTML = /* html */ `
+    <h3 class="text"><span>${title}</span></h3>
+    ${maps.length && getMenuList(maps)}
+  `;
+  $navigations.appendChild($map);
+});
+function getMenuList(menus) {
+  return /* html */ `
+    <ul>
+      ${menus.map((menu) => /* html */ `<li><a href="${menu.url}">${menu.name}</a></li>`).join('')}
+    </ul>
+  `;
 }
