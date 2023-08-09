@@ -1,3 +1,5 @@
+import ipads from '../data/ipads.js';
+
 const $header = document.querySelector('.header');
 const $headerMenus = [...$header.querySelectorAll('.menu .item')];
 //검색
@@ -71,7 +73,7 @@ window.addEventListener('click', hideBasket);
 
 //요소의 가성 관찰
 const io = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     }
@@ -82,7 +84,7 @@ const $infos = document.querySelectorAll('.info');
 $infos.forEach(($info) => io.observe($info));
 
 //동영상 재생 제어
-const $video = document.querySelector(".camera .stage video");
+const $video = document.querySelector('.camera .stage video');
 const $playBtn = document.querySelector('.camera .stage .controller--play');
 const $pauseBtn = document.querySelector('.camera .stage .controller--pause');
 function togglePlayOrPauseVideo() {
@@ -96,3 +98,29 @@ function togglePlayOrPauseVideo() {
 }
 $playBtn.addEventListener('click', togglePlayOrPauseVideo);
 $pauseBtn.addEventListener('click', togglePlayOrPauseVideo);
+
+// '당신에게 맞는 iPad는?' 랜더링
+const $items = document.querySelector('section.compare .items');
+ipads.forEach((ipad) => {
+  const { thumbnail, colors, name, tagline, price, url } = ipad;
+  const $item = document.createElement('div');
+  $item.className = 'item';
+  $item.innerHTML = /* html */ `
+                      <div class="thumbnail">
+                        <img src="${thumbnail}" alt="${name}" />
+                      </div>
+                      <ul class="colors">${getColorList(colors)}</ul>
+                      <h3 class="name">${name}</h3>
+                      <p class="tagline">${tagline}</p>
+                      <p class="price">${getPrice(price)}</p>
+                      <button class="btn">구입하기</button>
+                      <a href="${url}" class="link">더 알아보기</a>
+                    `;
+  $items.appendChild($item);
+});
+function getColorList(colors) {
+  return colors.map((color) => /* html */ `<li style="background-color: ${color};"></li>`).join('');
+}
+function getPrice(price) {
+  return `₩${price.toLocaleString('en-US')}부터`;
+}
