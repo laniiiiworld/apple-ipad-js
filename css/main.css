@@ -36,6 +36,11 @@ img {
 p {
   line-height: 1.6;
 }
+sup {
+  margin-right: 6px;
+  font-size: 0.7em;
+  vertical-align: top;
+}
 /* Inner */
 .inner {
   max-width: 980px;
@@ -1083,6 +1088,22 @@ footer .inner .buy-info > div p {
 }
 footer .inner .buy-info > div a.link {
   font-size: 14px;
+}
+/* Footer / warning */
+footer .inner .warning {
+  padding: 18px 0 10px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+footer .inner .warning ol {
+  list-style: decimal;
+  padding-left: 16px;
+}
+footer .inner .warning li {
+  margin-bottom: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-font-darkgray);
 }
 
 /* ---------- keyframes ---------- */
