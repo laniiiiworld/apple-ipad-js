@@ -1,3 +1,6 @@
+import ipads from '../data/ipads.js';
+import navigations from '../data/navigations.js';
+
 const $header = document.querySelector('.header');
 const $headerMenus = [...$header.querySelectorAll('.menu .item')];
 //검색
@@ -68,3 +71,81 @@ $basketStarter.addEventListener('click', (event) => {
 });
 $basket.addEventListener('click', (event) => event.stopPropagation());
 window.addEventListener('click', hideBasket);
+
+//요소의 가성 관찰
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add('show');
+  });
+});
+const $infos = document.querySelectorAll('.info');
+$infos.forEach(($info) => io.observe($info));
+
+//동영상 재생 제어
+const $video = document.querySelector('.camera .stage video');
+const $playBtn = document.querySelector('.camera .stage .controller--play');
+const $pauseBtn = document.querySelector('.camera .stage .controller--pause');
+function togglePlayOrPauseVideo() {
+  $playBtn.classList.toggle('hide');
+  $pauseBtn.classList.toggle('hide');
+  if ($playBtn.classList.contains('hide')) {
+    $video.play();
+  } else {
+    $video.pause();
+  }
+}
+$playBtn.addEventListener('click', togglePlayOrPauseVideo);
+$pauseBtn.addEventListener('click', togglePlayOrPauseVideo);
+
+// '당신에게 맞는 iPad는?' 랜더링
+const $items = document.querySelector('section.compare .items');
+ipads.forEach((ipad) => {
+  const { thumbnail, colors, name, tagline, price, url } = ipad;
+  const $item = document.createElement('div');
+  $item.className = 'item';
+  $item.innerHTML = /* html */ `
+                      <div class="thumbnail">
+                        <img src="${thumbnail}" alt="${name}" />
+                      </div>
+                      <ul class="colors">${getColorList(colors)}</ul>
+                      <h3 class="name">${name}</h3>
+                      <p class="tagline">${tagline}</p>
+                      <p class="price">${getPrice(price)}</p>
+                      <button class="btn">구입하기</button>
+                      <a href="${url}" class="link">더 알아보기</a>
+                    `;
+  $items.appendChild($item);
+});
+function getColorList(colors) {
+  return colors.map((color) => /* html */ `<li style="background-color: ${color};"></li>`).join('');
+}
+function getPrice(price) {
+  return `₩${price.toLocaleString('en-US')}부터`;
+}
+
+//Footer navigations 랜더링
+const $navigations = document.querySelector('footer .navigations');
+navigations.forEach((nav) => {
+  const { title, maps } = nav;
+  const $map = document.createElement('div');
+  $map.className = 'map';
+  $map.innerHTML = /* html */ `
+    <h3 class="text"><span>${title}</span></h3>
+    ${maps.length && getMenuList(maps)}
+  `;
+  $navigations.appendChild($map);
+});
+function getMenuList(menus) {
+  return /* html */ `
+    <ul>
+      ${menus.map((menu) => /* html */ `<li><a href="${menu.url}">${menu.name}</a></li>`).join('')}
+    </ul>
+  `;
+}
+
+// 올해 연도
+const $thisYear = document.querySelector('span.this-year');
+$thisYear.textContent = new Date().getFullYear();
