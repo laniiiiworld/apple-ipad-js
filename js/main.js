@@ -145,3 +145,7 @@ function getMenuList(menus) {
     </ul>
   `;
 }
+
+// 올해 연도
+const $thisYear = document.querySelector('span.this-year');
+$thisYear.textContent = new Date().getFullYear();
