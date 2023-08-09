@@ -22,7 +22,6 @@ body {
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   word-break: keep-all;
   color: var(--color-font);
-  height: 3000px;
 }
 a {
   color: var(--color-font);
@@ -477,6 +476,11 @@ a.link:hover {
 .nav .inner .menu li.active:hover a {
   cursor: default;
   color: var(--color-font-darkgray);
+}
+
+/* ---------- Main ---------- */
+main {
+  overflow-x: hidden;
 }
 
 /* ---------- Hero ---------- */

@@ -2,6 +2,9 @@
 
 - Apple iPad 제품 페이지를 반응형으로 구현
 
+## DEMO
+- [Apple iPad 제품 페이지(Clone)](https://apple-ipad-lani.netlify.app)
+
 ## 사용 기술 및 라이브러리
 
 ### 기술
