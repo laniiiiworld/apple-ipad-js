@@ -1,8 +1,9 @@
 :root {
   --color-white: #fff;
-  --color-black: #333;
+  --color-black: #000;
   --color-font: #1d1d1d;
   --color-font-darkgray: #6e6e6e;
+  --color-font-middlegray: #b7b7b7;
   --color-font-lightgray: #f5f5f5;
   --color-link: #0071e3;
   --color-border: #d2d2d2;
@@ -211,6 +212,7 @@ a.link:hover {
   color: var(--color-font-lightgray);
   position: relative;
   z-index: 9;
+  transition: 0.3s;
 }
 .header > .inner {
   max-width: 1020px;
@@ -225,6 +227,9 @@ a.link:hover {
   padding: 0.6rem;
   cursor: pointer;
   transition: 0.4s;
+}
+.header .menu .menu-starter {
+  display: none;
 }
 .header .inner .menu .item.basket-starter {
   position: relative;
@@ -348,7 +353,10 @@ a.link:hover {
   background-color: var(--color-section);
   color: var(--color-link);
 }
-
+/* clone-menu */
+.header .clone-menu {
+  display: none;
+}
 /* Search Animation */
 .header .search-wrap .search .textfield input,
 .header .search-wrap .search .textfield .search-icon,
