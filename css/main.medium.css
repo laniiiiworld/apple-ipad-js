@@ -110,3 +110,39 @@
 .power .inner .create .figures figure figcaption {
   transform: scale(0.8) translate(420px, 747px);
 }
+
+/* ---------- Display ---------- */
+.display {
+  margin-top: 180px;
+}
+/* Display / Notes */
+.display .inner .notes .headline {
+  width: 400px;
+  height: 240px;
+  transform: translate(120px, 0);
+}
+.display .inner .notes .figures {
+  height: 530px;
+}
+.display .inner .notes .figures figure {
+  transform: translate(80px, -10px);
+}
+.display .inner .notes .figures figure img {
+  width: 676px;
+}
+.display .inner .notes .figures figure .description {
+  transform: scale(0.8) translate(540px, -34px);
+}
+/* Display / Shareplay */
+.display .inner .shareplay .figures {
+  height: 330px;
+}
+.display .inner .shareplay .figures figure {
+  transform: translate(-178px, 0);
+}
+.display .inner .shareplay .figures figure img {
+  width: 682px;
+}
+.display .inner .shareplay .figures figure .description {
+  transform: scale(0.8) translate(261px, 540px);
+}

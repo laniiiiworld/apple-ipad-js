@@ -397,3 +397,43 @@ a.link {
 .power .inner .create .figures figure figcaption {
   transform: scale(0.8) translate(254px, 486px);
 }
+
+/* ---------- Display ---------- */
+/* Display / Notes */
+.display .inner .notes .headline {
+  background-image: url('../images/display_headline_mobile.png');
+  width: 290px;
+  height: 308px;
+  transform: none;
+  margin: 0 auto;
+}
+.display .inner .notes .figures {
+  height: auto;
+  margin-top: 60px;
+}
+.display .inner .notes .figures figure {
+  transform: translate(20px, 0);
+}
+.display .inner .notes .figures figure img {
+  width: 458px;
+}
+.display .inner .notes .figures figure .description {
+  transform: scale(0.8) translate(220px, -45px);
+}
+/* Display / Shareplay */
+.display .inner .shareplay {
+  margin-top: 30px;
+}
+.display .inner .shareplay .figures {
+  height: auto;
+  order: 1;
+}
+.display .inner .shareplay .figures figure {
+  transform: translate(20px, 0);
+}
+.display .inner .shareplay .figures figure img {
+  width: 460px;
+}
+.display .inner .shareplay .figures figure .description {
+  transform: scale(0.8) translate(261px, 358px);
+}
