@@ -112,7 +112,28 @@ window.addEventListener('resize', () => {
   }
 });
 
-//요소의 가성 관찰
+//[mobile] 네비게이션 메뉴 토글
+const $nav = document.querySelector('.nav');
+const $navMenuShadow = $nav.querySelector('.shadow');
+const $navMenuToggler = $nav.querySelector('.menu-toggler');
+$navMenuToggler.addEventListener('click', () => {
+  if ($nav.classList.contains('menuing')) {
+    hideNavMenu();
+  } else {
+    showNavMenu();
+  }
+});
+$nav.addEventListener('click', (event) => event.stopPropagation());
+window.addEventListener('click', hideNavMenu);
+$navMenuShadow.addEventListener('click', hideNavMenu);
+function showNavMenu() {
+  $nav.classList.add('menuing');
+}
+function hideNavMenu() {
+  $nav.classList.remove('menuing');
+}
+
+//요소의 가시성 관찰
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
