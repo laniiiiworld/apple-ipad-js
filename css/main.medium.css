@@ -1,4 +1,43 @@
+/* ---------- COMMON ---------- */
+/* Inner */
+.inner {
+  max-width: 692px;
+}
+
 /* ---------- Header ---------- */
 .header .inner {
   padding: 0 10px;
+}
+
+/* ---------- Hero ---------- */
+.hero .inner {
+  padding-bottom: 80px;
+}
+.hero .inner .title {
+  width: 166px;
+  height: 68px;
+  transform: translate(448px, 165px);
+}
+.hero .inner .figures {
+  height: 584px;
+  margin-bottom: 14px;
+}
+.hero .inner .figures figure {
+  transform: translate(70px, -24px);
+}
+.hero .inner .figures figure img {
+  width: 540px;
+}
+.hero .inner .figures figure figcaption .caption-camera {
+  transform: scale(0.8) translate(-9px, 524px);
+}
+.hero .inner .figures figure figcaption .caption-chip {
+  transform: scale(0.8) translate(510px, 422px);
+}
+.hero .inner .figures figure figcaption .caption-storage {
+  transform: scale(0.8) translate(556px, 556px);
+}
+.hero .inner .headline {
+  width: 515px;
+  height: 95px;
 }
