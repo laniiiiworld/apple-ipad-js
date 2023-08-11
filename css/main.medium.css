@@ -3,6 +3,24 @@
 .inner {
   max-width: 692px;
 }
+/* Figure Infos */
+.info {
+  max-width: 230px;
+}
+.infos--large .info {
+  max-width: 288px;
+}
+.info .icon {
+  transform: scale(0.8);
+  margin: -30px 0 -24px -32px;
+}
+.info .description {
+  font-size: 19px;
+  line-height: 1.4;
+}
+.info a.link {
+  margin-top: 24px;
+}
 
 /* ---------- Header ---------- */
 .header .inner {
@@ -40,4 +58,55 @@
 .hero .inner .headline {
   width: 515px;
   height: 95px;
+}
+
+/* ---------- Power ---------- */
+.power {
+  margin-top: 80px;
+}
+/* Power / Multiple Apps */
+.power .inner .multiple_apps .headline {
+  width: 310px;
+  height: 180px;
+}
+.power .inner .multiple_apps .figures {
+  height: 503px;
+}
+.power .inner .multiple_apps .figures figure {
+  transform: translate(71px, 0);
+}
+.power .inner .multiple_apps .figures figure img {
+  width: 682px;
+}
+.power .inner .multiple_apps .figures figure figcaption {
+  transform: scale(0.8) translate(532px, -58px);
+}
+/* Power / Arcade */
+.power .inner .arcade {
+  margin-top: 0;
+}
+.power .inner .arcade .figures {
+  height: 480px;
+}
+.power .inner .arcade .figures figure {
+  transform: translate(-182px, -6px);
+}
+.power .inner .arcade .figures figure img {
+  width: 676px;
+}
+.power .inner .arcade .figures figure figcaption {
+  transform: scale(0.8) translate(316px, 528px);
+}
+/* Power / Create */
+.power .inner .create .figures {
+  height: 588px;
+}
+.power .inner .create .figures figure {
+  transform: translate(4px, -36px);
+}
+.power .inner .create .figures figure img {
+  width: 820px;
+}
+.power .inner .create .figures figure figcaption {
+  transform: scale(0.8) translate(420px, 747px);
 }

@@ -8,6 +8,10 @@
 a.link {
   font-size: 17px;
 }
+/* Feature */
+.feature {
+  flex-direction: column;
+}
 /* Figures */
 .figures {
   display: flex;
@@ -16,6 +20,18 @@ a.link {
 .figures figure {
   position: relative;
 }
+/* Figure Infos */
+.info {
+  max-width: none;
+  padding: 0 20px;
+}
+.infos--large .info {
+  max-width: none;
+}
+.info a.link {
+  font-size: 17px;
+}
+
 /* ---------- Header ---------- */
 .header::before {
   content: '';
@@ -328,4 +344,56 @@ a.link {
 .hero .inner .description {
   width: auto;
   font-size: 17px;
+}
+
+/* ---------- Power ---------- */
+/* Power / Multiple Apps */
+.power .inner .multiple_apps .headline {
+  margin: 0 auto;
+  transform: none;
+}
+.power .inner .multiple_apps .figures {
+  height: 340px;
+  margin-top: 50px;
+}
+.power .inner .multiple_apps .figures figure {
+  transform: translate(20px, 0);
+}
+.power .inner .multiple_apps .figures figure img {
+  width: 462px;
+}
+.power .inner .multiple_apps .figures figure figcaption {
+  transform: scale(0.8) translate(112px, -45px);
+}
+/* Power / Arcade */
+.power .inner .arcade {
+  margin-top: 30px;
+  flex-direction: column-reverse;
+}
+.power .inner .arcade .figures {
+  height: auto;
+  margin-top: 20px;
+}
+.power .inner .arcade .figures figure {
+  transform: translate(20px, 0);
+}
+.power .inner .arcade .figures figure img {
+  width: 458px;
+}
+.power .inner .arcade .figures figure figcaption {
+  transform: scale(0.8) translate(316px, 368px);
+}
+/* Power / Create */
+.power .inner .create .figures {
+  height: auto;
+  margin-top: 20px;
+}
+.power .inner .create .figures figure {
+  transform: translate(100px, 0);
+}
+.power .inner .create .figures figure img {
+  width: 525px;
+}
+.power .inner .create .figures figure figcaption {
+  transform: scale(0.8) translate(254px, 486px);
 }
