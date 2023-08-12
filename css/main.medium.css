@@ -250,3 +250,47 @@
 .accessories .inner .figures figure figcaption .caption-supports {
   transform: scale(0.8) translate(101px, 650px);
 }
+
+/* ---------- iPadOS ---------- */
+.ipados {
+  margin-top: 100px;
+}
+.ipados .inner .headline {
+  width: 357px;
+  height: 274px;
+  margin: 0;
+}
+.ipados .inner .infos {
+  margin-top: -98px;
+}
+/* iPadOS / Figures */
+.ipados .inner .figures {
+  height: 520px;
+}
+.ipados .inner .figures .figure-split-view figure {
+  transform: translate(-17px, -187px);
+}
+.ipados .inner .figures .figure-split-view figure img {
+  width: 441px;
+}
+.ipados .inner .figures .figure-split-view figure .description {
+  transform: scale(0.8) translate(30px, -50px);
+}
+.ipados .inner .figures .figure-widgets figure {
+  transform: translate(180px, 3px);
+}
+.ipados .inner .figures .figure-widgets figure img {
+  width: 441px;
+}
+.ipados .inner .figures .figure-widgets figure .description {
+  transform: scale(0.8) translate(152px, 345px);
+}
+.ipados .inner .figures .figure-quick-note figure {
+  transform: translate(-346px, 119px);
+}
+.ipados .inner .figures .figure-quick-note figure img {
+  width: 333px;
+}
+.ipados .inner .figures .figure-quick-note figure .description {
+  transform: scale(0.8) translate(350px, 310px);
+}
