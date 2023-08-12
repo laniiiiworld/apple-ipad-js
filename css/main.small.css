@@ -32,6 +32,11 @@ a.link {
   font-size: 17px;
 }
 
+/* ---------- Whitebox ---------- */
+.whitebox p {
+  font-size: 17px;
+}
+
 /* ---------- Header ---------- */
 .header::before {
   content: '';
@@ -695,4 +700,18 @@ a.link {
 }
 .accessibility .inner .figures figure {
   transform: translate(20px, 0);
+}
+
+/* ---------- AR ---------- */
+.ar .whitebox .inner {
+  flex-direction: column;
+  align-items: center;
+}
+.ar .whitebox .inner > div {
+  max-width: none;
+  margin: 0 0 30px;
+  text-align: center;
+}
+.ar .whitebox .inner > div .icon {
+  margin: 0 auto 20px;
 }

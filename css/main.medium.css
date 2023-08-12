@@ -22,6 +22,17 @@
   margin-top: 24px;
 }
 
+/* ---------- Whitebox ---------- */
+.whitebox {
+  padding: 60px 30px;
+}
+.whitebox .icon {
+  width: 44px;
+}
+.whitebox h1 {
+  font-size: 36px;
+}
+
 /* ---------- Header ---------- */
 .header .inner {
   padding: 0 10px;
@@ -401,4 +412,9 @@
 }
 .accessibility .inner .figures figure img {
   width: 329px;
+}
+
+/* ---------- AR ---------- */
+.ar .whitebox .inner .image {
+  width: 258px;
 }
