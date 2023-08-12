@@ -217,9 +217,36 @@
   transform: scale(0.8) translate(670px, -60px);
 }
 /* Wireless / Files */
+.wireless .inner .files .figures {
+  height: 550px;
+}
 .wireless .inner .files .figures figure img {
   width: 676px;
 }
 .wireless .inner .files .figures figure .description {
   transform: scale(0.8) translate(43px, 520px);
+}
+
+/* ---------- Accessories ---------- */
+.accessories {
+  margin-top: 120px;
+}
+.accessories .inner .headline {
+  width: 384px;
+  height: 243px;
+}
+.accessories .inner .figures {
+  height: 700px;
+}
+.accessories .inner .figures figure {
+  transform: translate(12px, 0);
+}
+.accessories .inner .figures figure img {
+  width: 712px;
+}
+.accessories .inner .figures figure figcaption .caption-memo {
+  transform: scale(0.8) translate(677px, -60px);
+}
+.accessories .inner .figures figure figcaption .caption-supports {
+  transform: scale(0.8) translate(101px, 650px);
 }
