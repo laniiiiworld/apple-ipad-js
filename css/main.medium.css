@@ -418,3 +418,26 @@
 .ar .whitebox .inner .image {
   width: 258px;
 }
+
+/* ---------- Environment ---------- */
+.environment .whitebox .inner p br {
+  display: none;
+}
+
+/* ---------- Accessory Shop ---------- */
+.accessory-shop .whitebox .inner img {
+  width: 960px;
+}
+
+/* ---------- Trade ---------- */
+.trade .whitebox .inner p br {
+  display: none;
+}
+
+/* ---------- Compare ---------- */
+.compare .items {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 68px auto 34px;
+}

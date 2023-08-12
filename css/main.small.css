@@ -715,3 +715,21 @@ a.link {
 .ar .whitebox .inner > div .icon {
   margin: 0 auto 20px;
 }
+
+/* ---------- Compare ---------- */
+.compare .whitebox {
+  max-width: 430px;
+}
+.compare .items {
+  max-width: 190px;
+}
+.compare .items .item {
+  border-bottom: none;
+}
+.compare .inner .links {
+  padding-top: 40px;
+  border-top: 1px solid var(--color-border);
+}
+.compare .inner .links .link {
+  margin-top: 0;
+}
