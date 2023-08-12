@@ -664,3 +664,17 @@ a.link {
 .apps .inner .figures .figure-goodnotes figure .description {
   transform: scale(0.8) translate(24px, -37px);
 }
+
+/* ---------- Privacy ---------- */
+.privacy .inner .headline {
+  width: 277px;
+  height: 136px;
+  transform: none;
+  margin: 0 auto;
+}
+.privacy .inner .figures {
+  margin-top: 30px;
+}
+.privacy .inner .figures figure {
+  transform: translate(20px, 0);
+}

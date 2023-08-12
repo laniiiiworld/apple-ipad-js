@@ -358,3 +358,28 @@
 .apps .inner .figures .figure-goodnotes figure .description {
   transform: scale(0.8) translate(5px, 483px);
 }
+
+/* ---------- Privacy ---------- */
+.privacy {
+  margin-top: 120px;
+}
+.privacy .inner .headline {
+  width: 368px;
+  height: 182px;
+  transform: translate(70px, 0);
+}
+.privacy .inner .infos {
+  margin-top: 24px;
+}
+.privacy .inner .figures figure {
+  transform: translate(-18px, -440px);
+}
+.privacy .inner .figures figure img {
+  width: 441px;
+}
+.privacy .inner .figures figure figcaption .caption-apple-id {
+  transform: scale(0.8) translate(-22px, -18px);
+}
+.privacy .inner .figures figure figcaption .caption-touch-id {
+  transform: scale(0.8) translate(293px, 339px);
+}
