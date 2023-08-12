@@ -600,3 +600,67 @@ a.link {
   height: 88px;
   transform: scale(1) translate(-65px, 250px);
 }
+
+/* ---------- Apps ---------- */
+.apps .inner .headline {
+  width: 320px;
+  height: 169px;
+  margin: 0 auto;
+}
+.apps .inner .infos .info {
+  max-width: none;
+}
+.apps .inner .figures {
+  display: block;
+  height: auto;
+}
+.apps .inner .figures > div {
+  display: flex;
+  justify-content: center;
+  height: 240px;
+}
+.apps .inner .figures .figure-masterclass figure {
+  transform: translate(140px, 40px);
+}
+.apps .inner .figures .figure-masterclass figure img {
+  width: 270px;
+}
+.apps .inner .figures .figure-masterclass figure .description {
+  transform: scale(0.8) translate(29px, 400px);
+}
+.apps .inner .figures .figure-adobe figure {
+  transform: translate(-154px, -126px);
+}
+.apps .inner .figures .figure-adobe figure img {
+  width: 358px;
+}
+.apps .inner .figures .figure-adobe figure .description {
+  transform: scale(0.8) translate(233px, 295px);
+}
+.apps .inner .figures .figure-fantasian figure {
+  transform: translate(19px, -82px);
+}
+.apps .inner .figures .figure-fantasian figure img {
+  width: 358px;
+}
+.apps .inner .figures .figure-fantasian figure .description {
+  transform: scale(0.8) translate(24px, 282px);
+}
+.apps .inner .figures .figure-books figure {
+  transform: translate(-100px, -40px);
+}
+.apps .inner .figures .figure-books figure img {
+  width: 270px;
+}
+.apps .inner .figures .figure-books figure .description {
+  transform: scale(0.8) translate(197px, 407px);
+}
+.apps .inner .figures .figure-goodnotes figure {
+  transform: translate(132px, -110px);
+}
+.apps .inner .figures .figure-goodnotes figure img {
+  width: 286px;
+}
+.apps .inner .figures .figure-goodnotes figure .description {
+  transform: scale(0.8) translate(24px, -37px);
+}
