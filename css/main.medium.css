@@ -1,4 +1,457 @@
+/* ---------- COMMON ---------- */
+/* Inner */
+.inner {
+  max-width: 692px;
+}
+/* Figure Infos */
+.info {
+  max-width: 230px;
+}
+.infos--large .info {
+  max-width: 288px;
+}
+.info .icon {
+  transform: scale(0.8);
+  margin: -30px 0 -24px -32px;
+}
+.info .description {
+  font-size: 19px;
+  line-height: 1.4;
+}
+.info a.link {
+  margin-top: 24px;
+}
+
+/* ---------- Whitebox ---------- */
+.whitebox {
+  padding: 60px 30px;
+}
+.whitebox .icon {
+  width: 44px;
+}
+.whitebox h1 {
+  font-size: 36px;
+}
+
 /* ---------- Header ---------- */
 .header .inner {
   padding: 0 10px;
+}
+
+/* ---------- Hero ---------- */
+.hero .inner {
+  padding-bottom: 80px;
+}
+.hero .inner .title {
+  width: 166px;
+  height: 68px;
+  transform: translate(448px, 165px);
+}
+.hero .inner .figures {
+  height: 584px;
+  margin-bottom: 14px;
+}
+.hero .inner .figures figure {
+  transform: translate(70px, -24px);
+}
+.hero .inner .figures figure img {
+  width: 540px;
+}
+.hero .inner .figures figure figcaption .caption-camera {
+  transform: scale(0.8) translate(-9px, 524px);
+}
+.hero .inner .figures figure figcaption .caption-chip {
+  transform: scale(0.8) translate(510px, 422px);
+}
+.hero .inner .figures figure figcaption .caption-storage {
+  transform: scale(0.8) translate(556px, 556px);
+}
+.hero .inner .headline {
+  width: 515px;
+  height: 95px;
+}
+
+/* ---------- Power ---------- */
+.power {
+  margin-top: 80px;
+}
+/* Power / Multiple Apps */
+.power .inner .multiple_apps .headline {
+  width: 310px;
+  height: 180px;
+}
+.power .inner .multiple_apps .figures {
+  height: 503px;
+}
+.power .inner .multiple_apps .figures figure {
+  transform: translate(71px, 0);
+}
+.power .inner .multiple_apps .figures figure img {
+  width: 682px;
+}
+.power .inner .multiple_apps .figures figure figcaption {
+  transform: scale(0.8) translate(532px, -58px);
+}
+/* Power / Arcade */
+.power .inner .arcade {
+  margin-top: 0;
+}
+.power .inner .arcade .figures {
+  height: 480px;
+}
+.power .inner .arcade .figures figure {
+  transform: translate(-182px, -6px);
+}
+.power .inner .arcade .figures figure img {
+  width: 676px;
+}
+.power .inner .arcade .figures figure figcaption {
+  transform: scale(0.8) translate(316px, 528px);
+}
+/* Power / Create */
+.power .inner .create .figures {
+  height: 588px;
+}
+.power .inner .create .figures figure {
+  transform: translate(4px, -36px);
+}
+.power .inner .create .figures figure img {
+  width: 820px;
+}
+.power .inner .create .figures figure figcaption {
+  transform: scale(0.8) translate(420px, 747px);
+}
+
+/* ---------- Display ---------- */
+.display {
+  margin-top: 180px;
+}
+/* Display / Notes */
+.display .inner .notes .headline {
+  width: 400px;
+  height: 240px;
+  transform: translate(120px, 0);
+}
+.display .inner .notes .figures {
+  height: 530px;
+}
+.display .inner .notes .figures figure {
+  transform: translate(80px, -10px);
+}
+.display .inner .notes .figures figure img {
+  width: 676px;
+}
+.display .inner .notes .figures figure .description {
+  transform: scale(0.8) translate(540px, -34px);
+}
+/* Display / Shareplay */
+.display .inner .shareplay .figures {
+  height: 330px;
+}
+.display .inner .shareplay .figures figure {
+  transform: translate(-178px, 0);
+}
+.display .inner .shareplay .figures figure img {
+  width: 682px;
+}
+.display .inner .shareplay .figures figure .description {
+  transform: scale(0.8) translate(261px, 540px);
+}
+
+/* ---------- Camera ---------- */
+.camera {
+  margin-top: 165px;
+}
+/* Camera / Stage */
+.camera .inner .stage .headline {
+  width: 405px;
+  height: 270px;
+  transform: translate(0, 0);
+}
+.camera .inner .stage .info {
+  top: 0;
+}
+/* Camera / Stage / Video */
+.camera .inner .stage .figures {
+  height: 500px;
+}
+.camera .inner .stage .figures figure img {
+  width: 678px;
+}
+.camera .inner .stage .figures figure video {
+  top: 23px;
+  left: 50px;
+  transform: scale(0.65);
+  transform-origin: 0 0;
+}
+.camera .inner .stage .figures figure .controller--play,
+.camera .inner .stage .figures figure .controller--pause {
+  transform: translate(276px, -68px) rotate(-3deg);
+}
+.camera .inner .stage .figures figure .description {
+  transform: scale(0.8) translate(-136px, 306px);
+}
+/* Camera / Edit */
+.camera .inner .edit .figures {
+  height: auto;
+}
+.camera .inner .edit .figures figure {
+  transform: translate(40px, 0);
+}
+.camera .inner .edit .figures figure img {
+  width: 509px;
+}
+.camera .inner .edit .figures figure .description {
+  transform: scale(0.8) translate(27px, 742px);
+}
+
+/* ---------- Wireless ---------- */
+.wireless {
+  margin-top: 140px;
+}
+/* Wireless / Facetime */
+.wireless .inner .facetime .headline {
+  width: 450px;
+  height: 200px;
+  transform: translate(70px, 0);
+}
+.wireless .inner .facetime .figures {
+  height: 530px;
+}
+.wireless .inner .facetime .figures figure {
+  transform: translate(0, 0);
+}
+.wireless .inner .facetime .figures figure img {
+  width: 769px;
+}
+.wireless .inner .facetime .figures figure figcaption {
+  transform: scale(0.8) translate(670px, -60px);
+}
+/* Wireless / Files */
+.wireless .inner .files .figures {
+  height: 550px;
+}
+.wireless .inner .files .figures figure img {
+  width: 676px;
+}
+.wireless .inner .files .figures figure .description {
+  transform: scale(0.8) translate(43px, 520px);
+}
+
+/* ---------- Accessories ---------- */
+.accessories {
+  margin-top: 120px;
+}
+.accessories .inner .headline {
+  width: 384px;
+  height: 243px;
+}
+.accessories .inner .figures {
+  height: 700px;
+}
+.accessories .inner .figures figure {
+  transform: translate(12px, 0);
+}
+.accessories .inner .figures figure img {
+  width: 712px;
+}
+.accessories .inner .figures figure figcaption .caption-memo {
+  transform: scale(0.8) translate(677px, -60px);
+}
+.accessories .inner .figures figure figcaption .caption-supports {
+  transform: scale(0.8) translate(101px, 650px);
+}
+
+/* ---------- iPadOS ---------- */
+.ipados {
+  margin-top: 100px;
+}
+.ipados .inner .headline {
+  width: 357px;
+  height: 274px;
+  margin: 0;
+}
+.ipados .inner .infos {
+  margin-top: -98px;
+}
+/* iPadOS / Figures */
+.ipados .inner .figures {
+  height: 520px;
+}
+.ipados .inner .figures .figure-split-view figure {
+  transform: translate(-17px, -187px);
+}
+.ipados .inner .figures .figure-split-view figure img {
+  width: 441px;
+}
+.ipados .inner .figures .figure-split-view figure .description {
+  transform: scale(0.8) translate(30px, -50px);
+}
+.ipados .inner .figures .figure-widgets figure {
+  transform: translate(180px, 3px);
+}
+.ipados .inner .figures .figure-widgets figure img {
+  width: 441px;
+}
+.ipados .inner .figures .figure-widgets figure .description {
+  transform: scale(0.8) translate(152px, 345px);
+}
+.ipados .inner .figures .figure-quick-note figure {
+  transform: translate(-346px, 119px);
+}
+.ipados .inner .figures .figure-quick-note figure img {
+  width: 333px;
+}
+.ipados .inner .figures .figure-quick-note figure .description {
+  transform: scale(0.8) translate(350px, 310px);
+}
+
+/* ---------- Apps ---------- */
+.apps {
+  margin-top: 120px;
+}
+.apps .inner .headline {
+  width: 390px;
+  height: 208px;
+  transform: none;
+}
+.apps .inner .infos {
+  margin-left: 0;
+}
+.apps .inner .infos .info {
+  max-width: 404px;
+}
+.apps .inner .figures {
+  height: 450px;
+}
+.apps .inner .figures .figure-masterclass figure {
+  transform: translate(438px, -264px);
+}
+.apps .inner .figures .figure-masterclass figure img {
+  width: 330px;
+}
+.apps .inner .figures .figure-masterclass figure .description {
+  transform: scale(0.8) translate(6px, 480px);
+}
+.apps .inner .figures .figure-adobe figure {
+  transform: translate(-230px, 20px);
+}
+.apps .inner .figures .figure-adobe figure img {
+  width: 438px;
+}
+.apps .inner .figures .figure-adobe figure .description {
+  transform: scale(0.8) translate(324px, 355px);
+}
+.apps .inner .figures .figure-fantasian figure {
+  transform: translate(-40px, 160px);
+}
+.apps .inner .figures .figure-fantasian figure img {
+  width: 438px;
+}
+.apps .inner .figures .figure-fantasian figure .description {
+  transform: scale(0.8) translate(14px, 339px);
+}
+.apps .inner .figures .figure-books figure {
+  transform: translate(43px, -94px);
+}
+.apps .inner .figures .figure-books figure img {
+  width: 330px;
+}
+.apps .inner .figures .figure-books figure .description {
+  transform: scale(0.8) translate(252px, 493px);
+}
+.apps .inner .figures .figure-goodnotes figure {
+  transform: translate(3px, 28px);
+}
+.apps .inner .figures .figure-goodnotes figure img {
+  width: 346px;
+}
+.apps .inner .figures .figure-goodnotes figure .description {
+  transform: scale(0.8) translate(5px, 483px);
+}
+
+/* ---------- Privacy ---------- */
+.privacy {
+  margin-top: 120px;
+}
+.privacy .inner .headline {
+  width: 368px;
+  height: 182px;
+  transform: translate(70px, 0);
+}
+.privacy .inner .infos {
+  margin-top: 24px;
+}
+.privacy .inner .figures figure {
+  transform: translate(-18px, -440px);
+}
+.privacy .inner .figures figure img {
+  width: 441px;
+}
+.privacy .inner .figures figure figcaption .caption-apple-id {
+  transform: scale(0.8) translate(-22px, -18px);
+}
+.privacy .inner .figures figure figcaption .caption-touch-id {
+  transform: scale(0.8) translate(293px, 339px);
+}
+
+/* ---------- Accessibility ---------- */
+.accessibility {
+  margin-top: 86px;
+  margin-bottom: 120px;
+}
+.accessibility .inner .headline {
+  width: 287px;
+  height: 205px;
+}
+.accessibility .inner .infos .info {
+  max-width: 346px;
+}
+.accessibility .inner .figures figure {
+  transform: translate(401px, -504px);
+}
+.accessibility .inner .figures figure img {
+  width: 329px;
+}
+
+/* ---------- AR ---------- */
+.ar .whitebox .inner .image {
+  width: 258px;
+}
+
+/* ---------- Environment ---------- */
+.environment .whitebox .inner p br {
+  display: none;
+}
+
+/* ---------- Accessory Shop ---------- */
+.accessory-shop .whitebox .inner img {
+  width: 960px;
+}
+
+/* ---------- Trade ---------- */
+.trade .whitebox .inner p br {
+  display: none;
+}
+
+/* ---------- Compare ---------- */
+.compare .items {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 68px auto 34px;
+}
+
+/* ---------- Footer ---------- */
+footer .inner {
+  max-width: none;
+}
+/* Footer / Etc */
+footer .legal {
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0 30px;
+}
+footer .legal .locale {
+  margin-top: 14px;
 }

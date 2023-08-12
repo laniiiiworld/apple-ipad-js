@@ -112,7 +112,28 @@ window.addEventListener('resize', () => {
   }
 });
 
-//요소의 가성 관찰
+//[mobile] 네비게이션 메뉴 토글
+const $nav = document.querySelector('.nav');
+const $navMenuShadow = $nav.querySelector('.shadow');
+const $navMenuToggler = $nav.querySelector('.menu-toggler');
+$navMenuToggler.addEventListener('click', () => {
+  if ($nav.classList.contains('menuing')) {
+    hideNavMenu();
+  } else {
+    showNavMenu();
+  }
+});
+$nav.addEventListener('click', (event) => event.stopPropagation());
+window.addEventListener('click', hideNavMenu);
+$navMenuShadow.addEventListener('click', hideNavMenu);
+function showNavMenu() {
+  $nav.classList.add('menuing');
+}
+function hideNavMenu() {
+  $nav.classList.remove('menuing');
+}
+
+//요소의 가시성 관찰
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
@@ -173,7 +194,10 @@ navigations.forEach((nav) => {
   const $map = document.createElement('div');
   $map.className = 'map';
   $map.innerHTML = /* html */ `
-    <h3 class="text"><span>${title}</span></h3>
+    <h3>
+      <span class="text">${title}</span>
+      <span class="icon">+</span>
+    </h3>
     ${maps.length && getMenuList(maps)}
   `;
   $navigations.appendChild($map);
@@ -189,3 +213,10 @@ function getMenuList(menus) {
 // 올해 연도
 const $thisYear = document.querySelector('span.this-year');
 $thisYear.textContent = new Date().getFullYear();
+
+//[mobile] footer 내비게이션 맵 - 아코디언 메뉴로!
+const $mapList = document.querySelectorAll('footer .navigations .map');
+$mapList.forEach(($item) => {
+  const $h3 = $item.querySelector('h3');
+  $h3.addEventListener('click', () => $item.classList.toggle('active'));
+});

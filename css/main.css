@@ -446,6 +446,7 @@ a.link:hover {
 
 /* ---------- Navigation ---------- */
 .nav {
+  --nav-height: 3.25rem;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-border);
@@ -454,7 +455,7 @@ a.link:hover {
   z-index: 8;
 }
 .nav > .inner {
-  height: 3.25rem;
+  height: var(--nav-height);
   max-width: 1000px;
   display: flex;
   align-items: center;
@@ -759,6 +760,7 @@ main {
   height: 46px;
   transform: translate(70px, 650px);
 }
+
 /* ---------- Accessories ---------- */
 .accessories {
   margin-top: 12.1875rem;
@@ -945,6 +947,7 @@ main {
   height: 31px;
   transform: translate(533px, 485px);
 }
+
 /* ---------- Accessibility ---------- */
 .accessibility {
   margin-top: 16.625rem;
@@ -1166,9 +1169,12 @@ footer .navigations .map {
 footer .navigations .map:nth-child(6) {
   padding-bottom: 100px;
 }
-footer .navigations .map .text {
+footer .navigations .map h3 {
   font-size: 12px;
   font-weight: 600;
+}
+footer .navigations .map h3 .icon {
+  display: none;
 }
 footer .navigations .map ul li {
   margin-top: 12px;
