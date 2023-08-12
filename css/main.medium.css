@@ -193,3 +193,33 @@
 .camera .inner .edit .figures figure .description {
   transform: scale(0.8) translate(27px, 742px);
 }
+
+/* ---------- Wireless ---------- */
+.wireless {
+  margin-top: 140px;
+}
+/* Wireless / Facetime */
+.wireless .inner .facetime .headline {
+  width: 450px;
+  height: 200px;
+  transform: translate(70px, 0);
+}
+.wireless .inner .facetime .figures {
+  height: 530px;
+}
+.wireless .inner .facetime .figures figure {
+  transform: translate(0, 0);
+}
+.wireless .inner .facetime .figures figure img {
+  width: 769px;
+}
+.wireless .inner .facetime .figures figure figcaption {
+  transform: scale(0.8) translate(670px, -60px);
+}
+/* Wireless / Files */
+.wireless .inner .files .figures figure img {
+  width: 676px;
+}
+.wireless .inner .files .figures figure .description {
+  transform: scale(0.8) translate(43px, 520px);
+}
