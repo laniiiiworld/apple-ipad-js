@@ -441,3 +441,17 @@
   max-width: 500px;
   margin: 68px auto 34px;
 }
+
+/* ---------- Footer ---------- */
+footer .inner {
+  max-width: none;
+}
+/* Footer / Etc */
+footer .legal {
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0 30px;
+}
+footer .legal .locale {
+  margin-top: 14px;
+}

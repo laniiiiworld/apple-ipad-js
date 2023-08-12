@@ -1169,9 +1169,12 @@ footer .navigations .map {
 footer .navigations .map:nth-child(6) {
   padding-bottom: 100px;
 }
-footer .navigations .map .text {
+footer .navigations .map h3 {
   font-size: 12px;
   font-weight: 600;
+}
+footer .navigations .map h3 .icon {
+  display: none;
 }
 footer .navigations .map ul li {
   margin-top: 12px;

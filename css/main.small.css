@@ -733,3 +733,69 @@ a.link {
 .compare .inner .links .link {
   margin-top: 0;
 }
+
+/* ---------- Footer ---------- */
+/* Footer / buy-info */
+footer .inner .buy-info {
+  flex-wrap: wrap;
+}
+/* Footer / Navigations */
+footer .navigations {
+  height: auto;
+  display: block;
+}
+footer .navigations .map {
+  margin-top: 0;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+}
+footer .navigations .map:nth-child(6) {
+  padding-bottom: 0;
+}
+footer .navigations .map h3 {
+  padding: 12px 0;
+  font-weight: 400;
+  display: flex;
+}
+footer .navigations .map:hover h3 {
+  font-weight: 600;
+}
+footer .navigations .map h3 .text {
+  flex-grow: 1;
+}
+footer .navigations .map h3 .icon {
+  display: block;
+  padding: 0 10px;
+  color: var(--color-font-darkgray);
+}
+footer .navigations .map.active h3 .icon {
+  transform: scale(1.2) rotate(45deg);
+}
+footer .navigations .map ul {
+  height: 0;
+  overflow: hidden;
+  transition: 
+    transform 0.6s, 
+    opacity 0.3s;
+  transform: translate(0, -20px);
+  opacity: 0;
+}
+footer .navigations .map.active ul {
+  height: auto;
+  overflow: visible;
+  padding: 6px 0 18px;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+footer .navigations .map ul li {
+  margin-top: 0;
+}
+footer .navigations .map ul li a {
+  padding: 6px 12px;
+  display: block;
+}
+/* Footer / Etc */
+footer .legal ul {
+  flex-wrap: wrap;
+  gap: 6px 21px;
+}

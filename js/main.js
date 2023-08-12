@@ -194,7 +194,10 @@ navigations.forEach((nav) => {
   const $map = document.createElement('div');
   $map.className = 'map';
   $map.innerHTML = /* html */ `
-    <h3 class="text"><span>${title}</span></h3>
+    <h3>
+      <span class="text">${title}</span>
+      <span class="icon">+</span>
+    </h3>
     ${maps.length && getMenuList(maps)}
   `;
   $navigations.appendChild($map);
@@ -210,3 +213,10 @@ function getMenuList(menus) {
 // 올해 연도
 const $thisYear = document.querySelector('span.this-year');
 $thisYear.textContent = new Date().getFullYear();
+
+//[mobile] footer 내비게이션 맵 - 아코디언 메뉴로!
+const $mapList = document.querySelectorAll('footer .navigations .map');
+$mapList.forEach(($item) => {
+  const $h3 = $item.querySelector('h3');
+  $h3.addEventListener('click', () => $item.classList.toggle('active'));
+});
