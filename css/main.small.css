@@ -437,3 +437,55 @@ a.link {
 .display .inner .shareplay .figures figure .description {
   transform: scale(0.8) translate(261px, 358px);
 }
+
+/* ---------- Camera ---------- */
+.camera {
+  margin-top: 120px;
+}
+/* Camera / Stage */
+.camera .inner .stage .headline {
+  background-image: url('../images/camera_headline_mobile.png');
+  width: 304px;
+  height: 350px;
+  margin: 0 auto;
+}
+.camera .inner .stage .info {
+  position: static;
+  margin-top: 30px;
+}
+/* Camera / Stage / Video */
+.camera .inner .stage .figures {
+  height: auto;
+  margin-top: 64px;
+}
+.camera .inner .stage .figures figure {
+  transform: translate(20px, 0);
+}
+.camera .inner .stage .figures figure img {
+  width: 450px;
+}
+.camera .inner .stage .figures figure video {
+  top: 15px;
+  left: 33px;
+  transform: scale(0.43);
+}
+.camera .inner .stage .figures figure .controller--play,
+.camera .inner .stage .figures figure .controller--pause {
+  transform: translate(169px, -51px) rotate(-3deg);
+}
+.camera .inner .stage .figures figure .description {
+  background-image: url('../images/camera_hardware_caption_mobile.png');
+  width: 175px;
+  height: 43px;
+  transform: scale(1) translate(110px, -40px);
+}
+/* Camera / Edit */
+.camera .inner .edit .figures {
+  margin-top: 30px;
+}
+.camera .inner .edit .figures figure img {
+  width: 343px;
+}
+.camera .inner .edit .figures figure .description {
+  transform: scale(0.8) translate(27px, 502px);
+}

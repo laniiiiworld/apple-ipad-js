@@ -146,3 +146,50 @@
 .display .inner .shareplay .figures figure .description {
   transform: scale(0.8) translate(261px, 540px);
 }
+
+/* ---------- Camera ---------- */
+.camera {
+  margin-top: 165px;
+}
+/* Camera / Stage */
+.camera .inner .stage .headline {
+  width: 405px;
+  height: 270px;
+  transform: translate(0, 0);
+}
+.camera .inner .stage .info {
+  top: 0;
+}
+/* Camera / Stage / Video */
+.camera .inner .stage .figures {
+  height: 500px;
+}
+.camera .inner .stage .figures figure img {
+  width: 678px;
+}
+.camera .inner .stage .figures figure video {
+  top: 23px;
+  left: 50px;
+  transform: scale(0.65);
+  transform-origin: 0 0;
+}
+.camera .inner .stage .figures figure .controller--play,
+.camera .inner .stage .figures figure .controller--pause {
+  transform: translate(276px, -68px) rotate(-3deg);
+}
+.camera .inner .stage .figures figure .description {
+  transform: scale(0.8) translate(-136px, 306px);
+}
+/* Camera / Edit */
+.camera .inner .edit .figures {
+  height: auto;
+}
+.camera .inner .edit .figures figure {
+  transform: translate(40px, 0);
+}
+.camera .inner .edit .figures figure img {
+  width: 509px;
+}
+.camera .inner .edit .figures figure .description {
+  transform: scale(0.8) translate(27px, 742px);
+}
