@@ -383,3 +383,22 @@
 .privacy .inner .figures figure figcaption .caption-touch-id {
   transform: scale(0.8) translate(293px, 339px);
 }
+
+/* ---------- Accessibility ---------- */
+.accessibility {
+  margin-top: 86px;
+  margin-bottom: 120px;
+}
+.accessibility .inner .headline {
+  width: 287px;
+  height: 205px;
+}
+.accessibility .inner .infos .info {
+  max-width: 346px;
+}
+.accessibility .inner .figures figure {
+  transform: translate(401px, -504px);
+}
+.accessibility .inner .figures figure img {
+  width: 329px;
+}

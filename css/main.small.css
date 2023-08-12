@@ -678,3 +678,21 @@ a.link {
 .privacy .inner .figures figure {
   transform: translate(20px, 0);
 }
+
+/* ---------- Accessibility ---------- */
+.accessibility {
+  margin-bottom: 50px;
+}
+.accessibility .inner .headline {
+  height: 165px;
+  margin: 0 auto;
+}
+.accessibility .inner .infos .info {
+  max-width: none;
+}
+.accessibility .inner .figures {
+  margin-top: 30px;
+}
+.accessibility .inner .figures figure {
+  transform: translate(20px, 0);
+}
