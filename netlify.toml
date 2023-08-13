@@ -1,0 +1,3 @@
+[build]
+  # Exclude test files during deployment
+  ignore = ["/cypress/**", "cypress.config.js"]
