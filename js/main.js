@@ -1,8 +1,9 @@
 'use strict';
 
-import ipads from '../data/ipads.js';
+import { IpadList } from './components/IpadList.js';
 import { FooterNavigations } from './components/FooterNavigations.js';
 
+new IpadList();
 new FooterNavigations();
 
 const $header = document.querySelector('.header');
@@ -164,32 +165,6 @@ function togglePlayOrPauseVideo() {
 }
 $playBtn.addEventListener('click', togglePlayOrPauseVideo);
 $pauseBtn.addEventListener('click', togglePlayOrPauseVideo);
-
-// '당신에게 맞는 iPad는?' 랜더링
-const $items = document.querySelector('section.compare .items');
-ipads.forEach((ipad) => {
-  const { thumbnail, colors, name, tagline, price, url } = ipad;
-  const $item = document.createElement('div');
-  $item.className = 'item';
-  $item.innerHTML = /* html */ `
-                      <div class="thumbnail">
-                        <img src="${thumbnail}" alt="${name}" />
-                      </div>
-                      <ul class="colors">${getColorList(colors)}</ul>
-                      <h3 class="name">${name}</h3>
-                      <p class="tagline">${tagline}</p>
-                      <p class="price">${getPrice(price)}</p>
-                      <button class="btn">구입하기</button>
-                      <a href="${url}" class="link">더 알아보기</a>
-                    `;
-  $items.appendChild($item);
-});
-function getColorList(colors) {
-  return colors.map((color) => /* html */ `<li style="background-color: ${color};"></li>`).join('');
-}
-function getPrice(price) {
-  return `₩${price.toLocaleString('en-US')}부터`;
-}
 
 // 올해 연도
 const $thisYear = document.querySelector('span.this-year');
