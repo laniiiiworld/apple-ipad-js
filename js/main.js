@@ -1,12 +1,16 @@
 'use strict';
 
+import { Navigation } from './components/Navigation.js';
 import { Camera } from './components/Camera.js';
 import { IpadList } from './components/IpadList.js';
 import { FooterNavigations } from './components/FooterNavigations.js';
 
+const navigation = new Navigation();
 new Camera();
 new IpadList();
 new FooterNavigations();
+
+window.addEventListener('click', navigation.hideMenu);
 
 const $header = document.querySelector('.header');
 const $headerMenus = [...$header.querySelectorAll('.menu .item')];
@@ -118,27 +122,6 @@ window.addEventListener('resize', () => {
     $header.classList.remove('searching--mobile');
   }
 });
-
-//[mobile] 네비게이션 메뉴 토글
-const $nav = document.querySelector('.nav');
-const $navMenuShadow = $nav.querySelector('.shadow');
-const $navMenuToggler = $nav.querySelector('.menu-toggler');
-$navMenuToggler.addEventListener('click', () => {
-  if ($nav.classList.contains('menuing')) {
-    hideNavMenu();
-  } else {
-    showNavMenu();
-  }
-});
-$nav.addEventListener('click', (event) => event.stopPropagation());
-window.addEventListener('click', hideNavMenu);
-$navMenuShadow.addEventListener('click', hideNavMenu);
-function showNavMenu() {
-  $nav.classList.add('menuing');
-}
-function hideNavMenu() {
-  $nav.classList.remove('menuing');
-}
 
 //요소의 가시성 관찰
 const io = new IntersectionObserver((entries) => {
