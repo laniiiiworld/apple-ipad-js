@@ -20,6 +20,9 @@
 * CSS
 * JavaScript
 
+### 테스트
+* Cypress
+
 ### 라이브러리
 
 * [Reset.css](https://www.jsdelivr.com/package/npm/reset-css) (v5.0.2)
@@ -30,5 +33,4 @@
   - JavaScript에서 언어 식별자 주석을 사용하여 소스코드를 꾸며주는 익스텐션
 
 ## 개선사항
-* js 리팩토링 필요
-* 이미지 로딩 속도 최적화 필요
+* 에러 페이지 개선 필요
