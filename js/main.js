@@ -1,10 +1,12 @@
 'use strict';
 
+import { Scroll } from './components/Scroll.js';
 import { Navigation } from './components/Navigation.js';
 import { Camera } from './components/Camera.js';
 import { IpadList } from './components/IpadList.js';
 import { FooterNavigations } from './components/FooterNavigations.js';
 
+const scroll = new Scroll();
 const navigation = new Navigation();
 new Camera();
 new IpadList();
@@ -28,7 +30,7 @@ const $basket = $basketStarter.querySelector('.basket');
 //검색 창 보여주기
 function showSearch() {
   $header.classList.add('searching');
-  stopScroll();
+  scroll.stop();
   //header 메뉴들 애니메이션 지연 설정
   $headerMenus.reverse().forEach(($menu, index) => {
     $menu.style.transitionDelay = `${(0.4 * index) / $headerMenus.length}s`;
@@ -42,7 +44,7 @@ function showSearch() {
 //검색 창 숨기기
 function hideSearch() {
   $header.classList.remove('searching');
-  playScroll();
+  scroll.play();
   //header 메뉴들 애니메이션 지연 설정
   $headerMenus.reverse().forEach(($menu, index) => {
     $menu.style.transitionDelay = `${(0.4 * index) / $headerMenus.length}s`;
@@ -54,12 +56,7 @@ function hideSearch() {
   $searchDelays.reverse();
   $searchInput.value = '';
 }
-function playScroll() {
-  document.documentElement.classList.remove('fixed');
-}
-function stopScroll() {
-  document.documentElement.classList.add('fixed');
-}
+
 function showBasket() {
   $basket.classList.add('show');
 }
@@ -96,10 +93,10 @@ $menuStarter.addEventListener('click', () => {
   if ($header.classList.contains('menuing')) {
     $header.classList.remove('menuing');
     $searchInput.value = '';
-    playScroll();
+    scroll.play();
   } else {
     $header.classList.add('menuing');
-    stopScroll();
+    scroll.stop();
   }
 });
 
