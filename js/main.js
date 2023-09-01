@@ -1,5 +1,9 @@
+'use strict';
+
 import ipads from '../data/ipads.js';
-import navigations from '../data/navigations.js';
+import { FooterNavigations } from './components/FooterNavigations.js';
+
+new FooterNavigations();
 
 const $header = document.querySelector('.header');
 const $headerMenus = [...$header.querySelectorAll('.menu .item')];
@@ -187,36 +191,6 @@ function getPrice(price) {
   return `₩${price.toLocaleString('en-US')}부터`;
 }
 
-//Footer navigations 랜더링
-const $navigations = document.querySelector('footer .navigations');
-navigations.forEach((nav) => {
-  const { title, maps } = nav;
-  const $map = document.createElement('div');
-  $map.className = 'map';
-  $map.innerHTML = /* html */ `
-    <h3>
-      <span class="text">${title}</span>
-      <span class="icon">+</span>
-    </h3>
-    ${maps.length && getMenuList(maps)}
-  `;
-  $navigations.appendChild($map);
-});
-function getMenuList(menus) {
-  return /* html */ `
-    <ul>
-      ${menus.map((menu) => /* html */ `<li><a href="${menu.url}">${menu.name}</a></li>`).join('')}
-    </ul>
-  `;
-}
-
 // 올해 연도
 const $thisYear = document.querySelector('span.this-year');
 $thisYear.textContent = new Date().getFullYear();
-
-//[mobile] footer 내비게이션 맵 - 아코디언 메뉴로!
-const $mapList = document.querySelectorAll('footer .navigations .map');
-$mapList.forEach(($item) => {
-  const $h3 = $item.querySelector('h3');
-  $h3.addEventListener('click', () => $item.classList.toggle('active'));
-});
